@@ -92,10 +92,11 @@ export default function HomePage() {
               <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
-                        
+                            {/* ignore 
                             <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Skills
               </Link>
+              */}
           
                             <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Contact
@@ -195,7 +196,7 @@ export default function HomePage() {
             */}
 
 
-            {/* Skills Section */}
+            {/* Skills Section 
             <section id="skills" className="py-20 px-6">
                 <div className="max-w-4xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">Skills & Expertise</h2>
@@ -208,7 +209,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
-
+            */}
 
           {/* Bio Section 
           <section id="about me" className="py-20 px-6 bg-gray-50">
