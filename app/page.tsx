@@ -92,15 +92,11 @@ export default function HomePage() {
               <span className="text-xl font-medium text-gray-900">Colin O'Neill</span>
             </Link>
             <div className="hidden md:flex items-center space-x-8">
-                            <Link href="#work" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                Work
-              </Link>
+                        
                             <Link href="#skills" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Skills
               </Link>
-                            <Link href="#about me" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
-                              About Me
-              </Link>
+          
                             <Link href="#contact" className="block text-gray-600 hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium">
                 Contact
               </Link>
@@ -129,9 +125,9 @@ export default function HomePage() {
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">UX/UI/Product Designer</h1>
+          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">Designer</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            My name is Colin, I create meaningful digital experiences through thoughtful design and user-centered research.
+            My name is Colin, I create meaningful digital experiences through thoughtful design.
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#work">
@@ -144,7 +140,7 @@ export default function HomePage() {
 
      
 
-      {/* Projects Section */}
+      {/* Projects Section 
             <section id="work" className="py-20 px-6 bg-gray-50">
                 <div className="max-w-6xl mx-auto space-y-20">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">My Work</h2>
@@ -152,7 +148,6 @@ export default function HomePage() {
                         <article key={project.id} className="group">
                             <div className="grid md:grid-cols-2 gap-12 items-center">
                          
-                                {/* Text Content */}
                                 <div className={`${index % 2 === 1 ? "md:order-2" : "md:order-1"} space-y-6`}>
                                     <h3 className="text-2xl md:text-3xl font-light text-gray-900 group-hover:text-gray-600 transition-colors">
                                         {project.title}
@@ -178,7 +173,6 @@ export default function HomePage() {
                                     </Link>
                                 </div>
 
-                                {/* Image */}
                                 <div className={`${index % 2 === 1 ? "md:order-1" : "md:order-2"}`}>
                                     <Link href={`/projects/${project.id}`}>
                                         <div className="aspect-[3/2] overflow-hidden rounded-lg bg-gray-100 transition-transform duration-300 hover:scale-105 hover:shadow-xl">
@@ -198,6 +192,8 @@ export default function HomePage() {
                     ))}
                 </div>
             </section>
+            */}
+
 
             {/* Skills Section */}
             <section id="skills" className="py-20 px-6">
@@ -214,7 +210,7 @@ export default function HomePage() {
             </section>
 
 
-          {/* Bio Section */}
+          {/* Bio Section 
           <section id="about me" className="py-20 px-6 bg-gray-50">
               <div className="max-w-4xl mx-auto text-center">
                   <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">About Me</h2>
@@ -226,7 +222,7 @@ export default function HomePage() {
           </p>
               </div>
           </section>
-
+          */}
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
