@@ -131,8 +131,8 @@ export default function HomePage() {
             My name is Colin, I create meaningful digital experiences through thoughtful design.
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
-            <Link href="#work">
-                            View My Work
+            <Link href="#contact">
+                            Get In Touch
               <ArrowDown className="ml-2 h-4 w-4" />
             </Link>
           </Button>
