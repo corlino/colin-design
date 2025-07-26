@@ -26,6 +26,8 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
   `} >
 
                 <div className="max-w-6xl mx-auto px-6 z-40 flex flex-col space-y-4">
+
+                    {/*
                     <a
                         href="#work"
                         onClick={() => {
@@ -56,7 +58,7 @@ ${isOpen ? "translate-y-0" : "-translate-y-full"}
                         className="block text-gray-600 origin-right text-right hover:text-gray-900 text-base transform transition-transform duration-200 hover:scale-110 hover:font-medium"
                     >
                         About Me
-    </a>
+    </a> */}
                     <a
                         href="#contact"
                         onClick={() => {
