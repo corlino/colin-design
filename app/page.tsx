@@ -290,7 +290,7 @@ export default function HomePage() {
 
 
 
-            {/* Mosaic Gallery Section */}
+            {/* Mosaic Gallery Section 
             <section id="gallery" className="py-20 px-6 bg-gray-50">
                 <div className="max-w-6xl mx-auto">
                     <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">
@@ -326,7 +326,7 @@ export default function HomePage() {
             </section>
 
 
-
+*/}
 
 
 
