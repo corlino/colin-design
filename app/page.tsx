@@ -71,7 +71,7 @@ const skills = [
 
 const galleryItems = [
     {
-        image: "https://picsum.photos/seed/1/600/400",
+        image: "testgif.gif",
         description: "AI-powered financial assistant app",
     },
     {
