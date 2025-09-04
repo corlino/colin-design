@@ -126,13 +126,13 @@ export default function HomePage() {
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">Designer</h1>
+          <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">Colin O'Neill</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            My name is Colin, I create meaningful digital experiences through thoughtful design.
+            Hi, thanks for checking out my website.
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#contact">
-                            Get In Touch
+                            Check out my work!
               <ArrowDown className="ml-2 h-4 w-4" />
             </Link>
           </Button>
@@ -224,6 +224,48 @@ export default function HomePage() {
               </div>
           </section>
           */}
+
+
+
+
+            {/* Mosaic Gallery Section */}
+            <section id="gallery" className="py-20 px-6 bg-gray-50">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-3xl md:text-4xl font-light text-gray-900 mb-16 text-center">
+                        Project Gallery
+    </h2>
+
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
+                        {Array.from({ length: 12 }).map((_, i) => (
+                            <div
+                                key={i}
+                                className={`relative group overflow-hidden rounded-xl bg-gray-200 ${i % 5 === 0
+                                        ? "md:row-span-2"
+                                        : i % 7 === 0
+                                            ? "md:col-span-2"
+                                            : ""
+                                    }`}
+                            >
+                                <Image
+                                    src={`https://picsum.photos/seed/${i}/600/400`}
+                                    alt={`Placeholder ${i + 1}`}
+                                    fill
+                                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                />
+                                <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <p className="text-white text-lg font-light px-4 text-center">
+                                        Project description {i + 1}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+
+
+
 
       {/* Contact Section */}
       <section id="contact" className="py-20 px-6">
