@@ -65,6 +65,68 @@ const skills = [
   "Miro",
 ]
 
+
+
+
+
+const galleryItems = [
+    {
+        image: "https://picsum.photos/seed/1/600/400",
+        description: "AI-powered financial assistant app",
+    },
+    {
+        image: "https://picsum.photos/seed/2/600/400",
+        description: "Healthcare management platform",
+    },
+    {
+        image: "https://picsum.photos/seed/3/600/400",
+        description: "Data visualization dashboard",
+    },
+    {
+        image: "https://picsum.photos/seed/4/600/400",
+        description: "Enterprise workflow design",
+    },
+    {
+        image: "https://picsum.photos/seed/5/600/400",
+        description: "E-commerce conversion redesign",
+    },
+    {
+        image: "https://picsum.photos/seed/6/600/400",
+        description: "Mobile-first user experience",
+    },
+    {
+        image: "https://picsum.photos/seed/7/600/400",
+        description: "Advanced analytics toolkit",
+    },
+    {
+        image: "https://picsum.photos/seed/8/600/400",
+        description: "3D product visualization",
+    },
+    {
+        image: "https://picsum.photos/seed/9/600/400",
+        description: "Interactive prototype testing",
+    },
+    {
+        image: "https://picsum.photos/seed/10/600/400",
+        description: "Cross-platform app design",
+    },
+    {
+        image: "https://picsum.photos/seed/11/600/400",
+        description: "Responsive design system",
+    },
+    {
+        image: "https://picsum.photos/seed/12/600/400",
+        description: "Next-gen chatbot integration",
+    },
+];
+
+
+
+
+
+
+
+
 export default function HomePage() {
 
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -236,7 +298,7 @@ export default function HomePage() {
     </h2>
 
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px]">
-                        {Array.from({ length: 12 }).map((_, i) => (
+                        {galleryItems.map((item, i) => (
                             <div
                                 key={i}
                                 className={`relative group overflow-hidden rounded-xl bg-gray-200 ${i % 5 === 0
@@ -247,14 +309,14 @@ export default function HomePage() {
                                     }`}
                             >
                                 <Image
-                                    src={`https://picsum.photos/seed/${i}/600/400`}
-                                    alt={`Placeholder ${i + 1}`}
+                                    src={item.image}
+                                    alt={item.description}
                                     fill
                                     className="object-cover group-hover:scale-110 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                                     <p className="text-white text-lg font-light px-4 text-center">
-                                        Project description {i + 1}
+                                        {item.description}
                                     </p>
                                 </div>
                             </div>
@@ -262,6 +324,7 @@ export default function HomePage() {
                     </div>
                 </div>
             </section>
+
 
 
 
