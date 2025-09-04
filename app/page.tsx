@@ -190,11 +190,11 @@ export default function HomePage() {
           </div>
           <h1 className="text-5xl md:text-7xl font-light text-gray-900 mb-8 leading-tight">Colin O'Neill</h1>
           <p className="text-xl md:text-2xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Hi, thanks for checking out my website. I'm a logo maker, graphic designer, and 3D artist.
+            Hi, Thanks for checking out my website. I'm a logo maker, graphic designer, and 3D artist.
           </p>
           <Button asChild size="lg" className="bg-gray-900 hover:bg-gray-800">
             <Link href="#contact">
-                            Let's work together!
+                            Let's Work Together!
               <ArrowDown className="ml-2 h-4 w-4" />
             </Link>
           </Button>
